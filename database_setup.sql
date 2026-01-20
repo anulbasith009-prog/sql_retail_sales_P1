@@ -10,9 +10,9 @@ CREATE TABLE retail_sales(
     age INT,
     category VARCHAR(15),
     quantity INT,
-    price_per_unit FLOAT,
-    cogs FLOAT,
-    total_sale FLOAT
+    price_per_unit NUMERIC(10,2),
+    cogs NUMERIC(10,2),
+    total_sale NUMERIC(10,2)
 );
 
 -- Fix column name typo (if exists)
