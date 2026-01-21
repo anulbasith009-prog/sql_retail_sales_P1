@@ -16,6 +16,7 @@ FROM retail_sales
 WHERE sale_date = '2022-11-05';
 
 -- 2. Clothing sales with quantity more than 4 in Nov 2022
+-- TO_CHAR is used to extract year-month from date for monthly filtering
 SELECT *
 FROM retail_sales
 WHERE category = 'Clothing'
