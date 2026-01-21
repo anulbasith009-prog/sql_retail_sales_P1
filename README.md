@@ -24,7 +24,6 @@ This project is designed to demonstrate SQL skills and techniques typically used
 •⁠  ⁠The database name is environment-specific and not hardcoded in this project.
 
 ```sql
-CREATE DATABASE p1_retail_db;
 
 CREATE TABLE retail_sales(
 			transactions_id INT PRIMARY KEY,
