@@ -15,10 +15,6 @@ CREATE TABLE retail_sales(
     total_sale NUMERIC(10,2)
 );
 
--- Fix column name typo (if exists)
-ALTER TABLE retail_sales
-RENAME COLUMN quantiy TO quantity;
-
 -- Check for NULL values
 SELECT *
 FROM retail_sales
