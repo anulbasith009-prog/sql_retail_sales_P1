@@ -20,7 +20,8 @@ WHERE sale_date = '2022-11-05';
 SELECT *
 FROM retail_sales
 WHERE category = 'Clothing'
-  AND TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
+  AND EXTRACT(YEAR FROM sale_date) = 2022
+  AND EXTRACT(MONTH FROM sale_date) = 11
   AND quantity > 4;
 
 -- 3. Total sales for each category
