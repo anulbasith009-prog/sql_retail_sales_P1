@@ -43,3 +43,11 @@ WHERE
     OR quantity IS NULL
     OR cogs IS NULL
     OR total_sale IS NULL;
+
+
+-- Load data from CSV into retail_sales table
+-- Update the file path based on your local system before running
+COPY retail_sales
+FROM '/path/to/retail_sales.csv'
+DELIMITER ','
+CSV HEADER;
